@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Las guerras mundiales y el nuevo orden internacional</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--pg:#f1f3f8;--ink:#3b2a14;--r:#8b2e1f;--g:#a67c1a;--b:#1f4e79}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--pg:#14151a}}
+:root[data-theme="dark"]{--pg:#14151a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--pg);display:flex;justify-content:center;padding:14px;font-family:Georgia,'Times New Roman',serif;color:var(--ink)}
+.stage{position:relative;width:100%;max-width:1280px;aspect-ratio:16/9;min-height:520px;overflow:hidden;background:radial-gradient(ellipse at 30% 25%,#ecc983,transparent 60%),radial-gradient(ellipse at 75% 70%,#e0b36a,transparent 60%),#e6bd78;box-shadow:0 6px 24px rgba(0,0,0,.25)}
+.strip{position:absolute;left:0;right:0;height:14%;background:linear-gradient(#f3e8cf,#e4d3ac);color:rgba(60,45,25,.55);font-size:clamp(.7rem,1.6vw,1.3rem);letter-spacing:.35em;display:flex;align-items:center;justify-content:space-around;overflow:hidden;white-space:nowrap}
+.strip.t{top:0;clip-path:polygon(0 0,100% 0,100% 70%,94% 88%,86% 72%,78% 92%,68% 76%,58% 90%,47% 74%,36% 94%,25% 78%,14% 90%,6% 74%,0 86%);box-shadow:inset 0 -14px 20px -14px rgba(0,0,0,.4)}
+.strip.b{bottom:0;clip-path:polygon(0 14%,6% 28%,14% 10%,25% 26%,36% 8%,47% 26%,58% 12%,68% 28%,78% 10%,86% 26%,94% 12%,100% 24%,100% 100%,0 100%)}
+.corner{position:absolute;width:11%;aspect-ratio:1;border:0 solid #5a4125;opacity:.8}
+.corner.tr{top:16%;right:2%;border-top-width:2px;border-right-width:2px}
+.corner.bl{bottom:16%;left:2%;border-bottom-width:2px;border-left-width:2px}
+.deco{position:absolute;font-size:clamp(1.6rem,4.4vw,3.6rem);filter:drop-shadow(0 2px 2px rgba(0,0,0,.3))}
+.d1{top:1.5%;left:2%}.d2{top:8%;left:8%;font-size:clamp(1.2rem,3vw,2.4rem)}.d3{bottom:1%;right:2%}
+h1{position:absolute;top:15%;left:12%;right:12%;margin:0;text-align:center;font-size:clamp(1rem,2.6vw,2rem);line-height:1.15}
+.sub{position:absolute;top:calc(15% + clamp(1.4rem,3.4vw,2.6rem));left:0;right:0;text-align:center;font:italic clamp(.7rem,1.2vw,.95rem) Georgia,serif;color:#6b4e28}
+.track{position:absolute;top:27%;bottom:15%;left:5%;right:5%;overflow-x:auto;overflow-y:hidden;display:flex;scroll-snap-type:x proximity;scrollbar-width:thin;scrollbar-color:#8b6a3a transparent}
+.track:before{content:"";position:absolute;left:0;right:0;top:50%;height:4px;background:#6b4e28;transform:translateY(-50%);min-width:max-content;width:calc(var(--n)*210px)}
+.it{flex:0 0 210px;position:relative;height:100%;scroll-snap-align:start;display:flex;flex-direction:column}
+.half{flex:1;display:flex;padding:4px 6px}
+.up{align-items:flex-end}.dn{align-items:flex-start}
+.dot{position:absolute;left:50%;top:50%;width:clamp(30px,3.6vw,44px);height:clamp(30px,3.6vw,44px);margin:calc(clamp(30px,3.6vw,44px)/-2) 0 0 calc(clamp(30px,3.6vw,44px)/-2);border-radius:50%;background:var(--c);border:3px solid #f7ecd2;display:flex;align-items:center;justify-content:center;font-size:clamp(.9rem,1.8vw,1.3rem);z-index:2}
+.card{width:100%;background:rgba(255,248,230,.88);border:1px solid #b99a62;border-top:4px solid var(--c);border-radius:8px;padding:6px 9px;box-shadow:0 2px 5px rgba(60,40,10,.2)}
+.up .card{margin-bottom:clamp(14px,2.2vw,24px)}.dn .card{margin-top:clamp(14px,2.2vw,24px)}
+.y{font:800 clamp(.72rem,1.3vw,1rem) system-ui,sans-serif;color:var(--c)}
+.card h3{margin:0 0 2px;font-size:clamp(.7rem,1.2vw,.92rem);line-height:1.15}
+.card p{margin:0;font:clamp(.6rem,.95vw,.76rem)/1.3 system-ui,sans-serif;color:#4a3a22}
+.w1{--c:var(--r)}.mid{--c:var(--g)}.w2{--c:var(--b)}.sm{--c:#4d3a1e}
+.nav{position:absolute;top:50%;z-index:3;width:34px;height:34px;border-radius:50%;border:2px solid #5a4125;background:#f7ecd2;color:#3b2a14;font-size:1rem;cursor:pointer;transform:translateY(-50%)}
+.nav.l{left:1%}.nav.r{right:1%}
+.lg{position:absolute;bottom:15.5%;left:0;right:0;display:flex;justify-content:center;gap:12px;font:clamp(.55rem,.9vw,.75rem) system-ui,sans-serif;color:#fff}
+.lg span{padding:1px 10px;border-radius:99px}
+@media(max-width:700px){.stage{aspect-ratio:auto;min-height:640px}.it{flex-basis:190px}.track:before{width:calc(var(--n)*190px)}}
+</style></head><body>
+<div class="stage">
+<div class="strip t"><span>BOSNIA</span><span>PRINCIPADO</span><span>BULGARIA</span></div>
+<div class="strip b"><span>ÁFRICA</span><span>GRECIA</span><span>MALTA</span></div>
+<div class="corner tr"></div><div class="corner bl"></div>
+<div class="deco d1">⏳</div><div class="deco d2">🧭</div><div class="deco d3">🖋️</div>
+<h1>Las guerras mundiales y el nuevo orden internacional</h1>
+<div class="sub">Línea de tiempo 1914 – 1945 · desliza o usa las flechas →</div>
+<button class="nav l" aria-label="Anterior" onclick="go(-1)">◀</button>
+<button class="nav r" aria-label="Siguiente" onclick="go(1)">▶</button>
+<div class="track" id="tr" style="--n:14">
+<div class="it w1"><div class="dot">🔫</div><div class="half up"><div class="card"><div class="y">28 jun 1914</div><h3>Atentado de Sarajevo</h3><p>Asesinan al archiduque Francisco Fernando; las alianzas arrastran a Europa a la guerra.</p></div></div><div class="half dn"></div></div>
+<div class="it w1"><div class="dot">🪖</div><div class="half up"></div><div class="half dn"><div class="card"><div class="y">1914–1916</div><h3>Guerra de trincheras</h3><p>Marne, Verdún y Somme: millones de muertos, gas y ametralladoras sin grandes avances.</p></div></div></div>
+<div class="it w1"><div class="dot">✉️</div><div class="half up"><div class="card"><div class="y">1917</div><h3>Zimmermann y EE. UU.</h3><p>Alemania propone a México una alianza; EE. UU. entra a la guerra. Estalla la Revolución rusa.</p></div></div><div class="half dn"></div></div>
+<div class="it w1"><div class="dot">🕊️</div><div class="half up"></div><div class="half dn"><div class="card"><div class="y">11 nov 1918</div><h3>Armisticio</h3><p>Alemania se rinde. Caen los imperios alemán, austrohúngaro, ruso y otomano.</p></div></div></div>
+<div class="it mid"><div class="dot">📜</div><div class="half up"><div class="card"><div class="y">1919</div><h3>Versalles y Sociedad de Naciones</h3><p>Alemania pierde territorios y paga reparaciones. Nacen nuevos Estados en Europa.</p></div></div><div class="half dn"></div></div>
+<div class="it mid"><div class="dot">📉</div><div class="half up"></div><div class="half dn"><div class="card"><div class="y">1929</div><h3>Gran Depresión</h3><p>La crisis de Wall Street hunde el comercio y el precio de las materias primas latinoamericanas.</p></div></div></div>
+<div class="it mid"><div class="dot">⚡</div><div class="half up"><div class="card"><div class="y">1922–1938</div><h3>Fascismo y nazismo</h3><p>Mussolini (1922), Hitler (1933), rearme alemán y apaciguamiento hasta 1938.</p></div></div><div class="half dn"></div></div>
+<div class="it w2"><div class="dot">✈️</div><div class="half up"></div><div class="half dn"><div class="card"><div class="y">1 sep 1939</div><h3>Invasión de Polonia</h3><p>Guerra relámpago alemana; Francia y Reino Unido declaran la guerra.</p></div></div></div>
+<div class="it w2"><div class="dot">⚓</div><div class="half up"><div class="card"><div class="y">7 dic 1941</div><h3>Pearl Harbor</h3><p>Japón ataca Hawái y EE. UU. entra a la guerra. Antes, Alemania invadió la URSS.</p></div></div><div class="half dn"></div></div>
+<div class="it w2"><div class="dot">❄️</div><div class="half up"></div><div class="half dn"><div class="card"><div class="y">1942–1943</div><h3>Midway y Stalingrado</h3><p>Puntos de quiebre en el Pacífico y en el frente oriental.</p></div></div></div>
+<div class="it w2"><div class="dot">🌊</div><div class="half up"><div class="card"><div class="y">6 jun 1944</div><h3>Día D: Normandía</h3><p>Se abre el frente occidental. Brasil lucha en Italia y México envía el Escuadrón 201.</p></div></div><div class="half dn"></div></div>
+<div class="it w2"><div class="dot">☢️</div><div class="half up"></div><div class="half dn"><div class="card"><div class="y">Ago–Sep 1945</div><h3>Bombas atómicas</h3><p>Hiroshima (6 ago) y Nagasaki (9 ago). Japón se rinde el 2 de septiembre.</p></div></div></div>
+<div class="it mid"><div class="dot">🏛️</div><div class="half up"><div class="card"><div class="y">1945–1948</div><h3>ONU y Guerra Fría</h3><p>Mundo bipolar EE. UU.–URSS. En América: TIAR (1947) y OEA (1948).</p></div></div><div class="half dn"></div></div>
+<div class="it sm"><div class="dot">🌎</div><div class="half up"></div><div class="half dn"><div class="card"><div class="y">Conclusión</div><h3>América Latina</h3><p>Cambia de socio: EE. UU. sustituye a Europa y la región queda más dependiente de exportar materias primas.</p></div></div></div>
+</div>
+<div class="lg"><span style="background:var(--r)">1ª Guerra</span><span style="background:var(--g)">Entreguerras</span><span style="background:var(--b)">2ª Guerra</span></div>
+</div>
+<script>
+function go(d){document.getElementById('tr').scrollBy({left:d*420,behavior:'smooth'})}
+</script>
+</body></html>
